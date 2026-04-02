@@ -1,0 +1,65 @@
+<!-- Задание 1: Все элементы с атрибутом title -->
+<div title="tooltip">Элемент с title</div>
+<p title="info">Абзац с title</p>
+<span>Элемент без title</span>
+<style>
+[title] {
+	color: blue;
+}
+</style>
+
+<!-- Задание 2: Все абзацы с атрибутом title -->
+<p title="hello">Абзац 1</p>
+<p title="world">Абзац 2</p>
+<div title="div">Див с title</div>
+<style>
+p[title] {
+	background-color: lightyellow;
+}
+</style>
+
+<!-- Задание 3: Все абзацы с title='hello' -->
+<p title="hello">Абзац hello</p>
+<p title="world">Абзац world</p>
+<style>
+p[title="hello"] {
+	font-weight: bold;
+}
+</style>
+
+<!-- Задание 4: Ссылки href начинаются с http:// -->
+<a href="http://example.com">Ссылка 1</a>
+<a href="https://secure.com">Ссылка 2</a>
+<style>
+a[href^="http://"] {
+	color: red;
+}
+</style>
+
+<!-- Задание 5: Ссылки href заканчиваются на .html -->
+<a href="page1.html">Страница 1</a>
+<a href="index.php">Главная</a>
+<style>
+a[href$=".html"] {
+	text-decoration: underline;
+}
+</style>
+
+<!-- Задание 6: Абзацы с title, содержащим слово 'hello' -->
+<p title="say hello">Привет</p>
+<p title="greetings">Приветствие</p>
+<style>
+p[title*="hello"] {
+	color: green;
+}
+</style>
+
+<!-- Задание 7: Абзацы с классом, который начинается на 'top-' -->
+<p class="top-main">Параграф 1</p>
+<p class="top-secondary">Параграф 2</p>
+<p class="bottom">Параграф 3</p>
+<style>
+p[class^="top-"] {
+	font-style: italic;
+}
+</style>
